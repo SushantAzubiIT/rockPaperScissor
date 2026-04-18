@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-container{
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.nav-items{
+    color: brown;
+    margin: 10px 0; 
+    font-size: x-large;
+
+}
+
+#name-of-game{
+    text-align: center;
+    font-size: 40px;
+    background-color: beige;
+}
+
+#container{
+    display: flex;
+    width: 90vw;
+    height: 40vh;
+    background-color: aquamarine;
+    margin: auto auto;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box{
+    width: 20%;
+    height: 70%;
+    background-color: rebeccapurple;
+    color: red;
+    text-align: center;
+
+}
