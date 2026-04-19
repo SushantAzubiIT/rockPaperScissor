@@ -43,3 +43,28 @@
     text-align: center;
 
 }
+
+h2{
+    text-align: center;
+    background-color: aquamarine;
+    margin: 5px auto;
+    width: 90vw;
+}
+
+#rock{
+    background-image: url(rock.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#paper{
+    background-image: url(paper.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#scissor{
+    background-image: url(scissor.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
