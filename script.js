@@ -19,16 +19,16 @@ function randomChoicePicker(){
 function winLosLogic(){
     if(humanChoice=="rock" && computerChoice=="rock" || humanChoice=="scissor" && computerChoice=="scissor" || humanChoice=="paper" && computerChoice=="paper")
     {
-        loseWinMsg.innerText="YOO! its a tie play again";
-        console("YOO! its a tie play again");
+        loseWinMsg.innerText=`YOO! its a tie play again you choosed ${humanChoice} and computer picked ${computerChoice} too.`;
+        console.log("YOO! its a tie play again");
     }
     else if(humanChoice=="rock" && computerChoice=="paper" || humanChoice=="paper" && computerChoice=="scissor" || humanChoice=="scissor" && computerChoice=="rock")
     {
-        loseWinMsg.innerText="Sorry! you lost";
+        loseWinMsg.innerText=`Sorry! you lost you choosed ${humanChoice} and computer picked ${computerChoice}.`;
         console.log("Sorry! you lost");
     }
     else{
-        loseWinMsg.innerText="Damn! bro, you won";
+        loseWinMsg.innerText=`Damn! bro, you won you choosed ${humanChoice} and computer picked ${computerChoice}.`;
         console.log("Damn! bro, you won");
     }
 
