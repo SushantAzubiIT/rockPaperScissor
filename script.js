@@ -2,6 +2,8 @@ const rock=document.getElementById("rock");
 const paper=document.getElementById("paper");
 const scissor=document.getElementById("scissor");
 const box=document.getElementsByClassName("box");
+const humanCount=document.getElementById("human-count");
+const computerCount=document.getElementById("computer-count");
 const loseWinMsg= document.getElementById("lose-win-msg");
 const choices=["rock","paper","scissor"];
 
@@ -9,6 +11,8 @@ const choices=["rock","paper","scissor"];
 
 let computerChoice="";
 let humanChoice="";
+let computerScore= 0;
+let humanScore=0;
 
 function randomChoicePicker(){
     computerChoice =choices[Math.floor(Math.random()*3)];
@@ -26,11 +30,16 @@ function winLosLogic(){
     {
         loseWinMsg.innerText=`Sorry! you lost you choosed ${humanChoice} and computer picked ${computerChoice}.`;
         console.log("Sorry! you lost");
+        computerScore+=1;
     }
     else{
         loseWinMsg.innerText=`Damn! bro, you won you choosed ${humanChoice} and computer picked ${computerChoice}.`;
         console.log("Damn! bro, you won");
+        humanScore+=1;
     }
+
+    computerCount.innerText=computerScore;
+    humanCount.innerText=humanScore;
 
 }
 
